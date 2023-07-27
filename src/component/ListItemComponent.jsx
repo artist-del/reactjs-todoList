@@ -16,33 +16,37 @@ const ListItemComponent = ({ item, getId, itemUpdate }) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <ul className="list-group">
-          {item.map((data) => (
-            <li
-              key={data.id}
-              className="list-group-item d-flex justify-content-between align-items-center"
-            >
-              {data.name}
-              <div className="badge">
-                <button
-                  className="bg-danger btn btn-sm"
-                  onClick={() => handleRemove(data.id)}
-                  style={{marginRight: "5px"}}
-                >
-                  Delete
-                </button>
-                <button
-                  className="bg-success btn btn-sm"
-                  onClick={() => {
-                    handleUpdate(data.id, data.name, true);
-                  }}
-                >
-                  Update
-                </button>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <div className="row">
+          <div className="col-md-12">
+                  <ul className="list-group">
+                {item.map((data) => (
+                  <li
+                    key={data.id}
+                    className="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    {data.name}
+                    <div className="badge">
+                      <button
+                        className="bg-danger btn btn-sm"
+                        onClick={() => handleRemove(data.id)}
+                        style={{marginRight: "5px"}}
+                      >
+                        Delete
+                      </button>
+                      <button
+                        className="bg-success btn btn-sm"
+                        onClick={() => {
+                          handleUpdate(data.id, data.name, true);
+                        }}
+                      >
+                        Update
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+          </div>
+        </div>
       </div>
     </>
   );
