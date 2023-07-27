@@ -41,7 +41,7 @@ const UserInputComponent = ({
         <input
           type="text"
           placeholder="Enter your text here"
-          className="form-control w-25"
+          className="form-control w-25 col-sm-12"
           value={userInput}
           onChange={handleUserInput}
           style={{marginRight: "20px"}}
