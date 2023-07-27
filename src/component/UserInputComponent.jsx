@@ -39,11 +39,11 @@ const UserInputComponent = ({
       <div className="d-flex justify-content-center">
        
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-12">
             <input
               type="text"
               placeholder="Enter your text here"
-              className="form-control w-25"
+              className="form-control"
               value={userInput}
               onChange={handleUserInput}
               style={{marginRight: "20px"}}
@@ -59,7 +59,7 @@ const UserInputComponent = ({
           </div>
         ) : (
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-12">
               <button className="btn btn-info" onClick={handleOnclickUserInput}>
             Save
           </button>
