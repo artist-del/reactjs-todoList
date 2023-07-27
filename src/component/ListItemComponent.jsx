@@ -29,7 +29,7 @@ const ListItemComponent = ({ item, getId, itemUpdate }) => {
                   onClick={() => handleRemove(data.id)}
                   style={{marginRight: "5px"}}
                 >
-                  X
+                  Delete
                 </button>
                 <button
                   className="bg-success btn btn-sm"
