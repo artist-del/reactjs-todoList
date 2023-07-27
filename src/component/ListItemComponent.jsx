@@ -16,7 +16,7 @@ const ListItemComponent = ({ item, getId, itemUpdate }) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <ul className="list-group w-25">
+        <ul className="list-group">
           {item.map((data) => (
             <li
               key={data.id}
