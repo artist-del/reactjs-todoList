@@ -38,21 +38,33 @@ const UserInputComponent = ({
     <>
       <div className="d-flex justify-content-center">
        
-        <input
-          type="text"
-          placeholder="Enter your text here"
-          className="form-control w-25 col-sm-12"
-          value={userInput}
-          onChange={handleUserInput}
-          style={{marginRight: "20px"}}
-        />
+        <div className="row">
+          <div className="col-md-6">
+            <input
+              type="text"
+              placeholder="Enter your text here"
+              className="form-control w-25"
+              value={userInput}
+              onChange={handleUserInput}
+              style={{marginRight: "20px"}}
+            />
+          </div>
+        </div>
         
         {isUpdate ? (
-          <button className="btn btn-info" onClick={handleUpdate}>Update</button>
+          <div className="row">
+            <div className="col-md-6">
+              <button className="btn btn-info" onClick={handleUpdate}>Update</button>
+            </div>
+          </div>
         ) : (
-          <button className="btn btn-info" onClick={handleOnclickUserInput}>
+          <div className="row">
+            <div className="col-md-6">
+              <button className="btn btn-info" onClick={handleOnclickUserInput}>
             Save
           </button>
+            </div>
+          </div>
         )}
       </div>
     </>
