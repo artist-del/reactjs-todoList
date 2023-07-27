@@ -37,7 +37,7 @@ const ListItemComponent = ({ item, getId, itemUpdate }) => {
                     handleUpdate(data.id, data.name, true);
                   }}
                 >
-                  update
+                  Update
                 </button>
               </div>
             </li>
